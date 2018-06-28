@@ -22,6 +22,12 @@ pipeline {
                sh 'mvn package'
             }
         }
+         stage('Run') { 
+            steps { 
+               echo 'Run stage started.'
+               sh 'mvn exec:java -Dexec.mainClass="com.maven.proyecto.App
+            }
+        }
         stage('Finish') { 
             steps { 
                echo 'Build is finish.'
