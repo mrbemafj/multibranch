@@ -25,7 +25,7 @@ pipeline {
          stage('Run') { 
             steps { 
                echo 'Run stage started.'
-               sh 'mvn exec:java -Dexec.mainClass="com.mrbemafj.multibranch
+               sh 'mvn exec:java -Dexec.mainClass="com.mrbemafj.multibranch.App
             }
         }
         stage('Finish') { 
